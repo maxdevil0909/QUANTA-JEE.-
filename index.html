@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QUANTA JEE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+ <a class="brand" href="#"><span class="brand-mark">S</span><span>QUANTA <b>JEE ACADEMY</b><small>PREPARE SMART · PRACTICE MORE</small></span></a>
+ <nav><a href="#practice">Practice</a><a href="#resources">Notes & Mind Maps</a><a href="#pricing">Premium</a></nav>
+ <div class="top-actions"><button class="btn ghost" id="loginBtn">Login / Sign up</button><button class="btn primary" id="headerTest">Start a test</button></div>
+ <button class="menu" id="menuBtn">☰</button>
+</header>
+<main>
+<section class="hero">
+ <div class="hero-copy"><div class="eyebrow"><span class="dot"></span> YOUR JEE PREPARATION PARTNER</div>
+ <h1>Practice with purpose.<br><em>Crack JEE.</em></h1>
+ <p>Chapter-wise practice, exam-style mock tests, crisp revision notes and visual mind maps — all in one place.</p>
+ <div class="hero-actions"><button class="btn primary large" id="heroTest">Explore mock tests →</button><a class="btn outline large" href="#resources">Explore free resources</a></div>
+ <div class="trust"><span>✓ Demo tests available</span><span>✓ Main + Advanced patterns</span><span>✓ Learn at your pace</span></div></div>
+ <div class="hero-panel"><div class="panel-top"><span>YOUR PREPARATION HUB</span><span class="live">● READY</span></div><div class="score-card"><div><small>QUESTION BANK TARGET</small><strong>2,000<span>+</span></strong><small>Questions across PCM</small></div><div class="orb">JEE<br><b>2027</b></div></div><div class="mini-grid"><div><span>📘</span><b>Chapter tests</b><small>Learn topic by topic</small></div><div><span>⏱️</span><b>Timed mocks</b><small>Exam-like practice</small></div><div><span>🧠</span><b>Mind maps</b><small>Fast revision</small></div><div><span>📊</span><b>Analytics</b><small>Track improvement</small></div></div></div>
+</section>
+<section class="stats"><div><b>3</b><span>Core subjects</span></div><div><b>2</b><span>Exam pathways</span></div><div><b>92+</b><span>Quiz sets planned</span></div><div><b>₹29</b><span>One-time premium offer</span></div></section>
+<section id="practice" class="section"><div class="section-head"><div><div class="eyebrow">PRACTICE YOUR WAY</div><h2>Choose your practice</h2><p>Pick a subject, chapter or exam pattern and get started.</p></div><button class="btn outline" id="allTests">View all tests →</button></div>
+ <div class="subject-grid"><article class="subject physics"><div class="subject-icon">⚛</div><small>SUBJECT 01</small><h3>Physics</h3><p>Mechanics, electricity, optics and more.</p><button data-subject="Physics" class="text-btn subjectBtn">Explore Physics →</button></article><article class="subject chemistry"><div class="subject-icon">🧪</div><small>SUBJECT 02</small><h3>Chemistry</h3><p>Physical, organic and inorganic chemistry.</p><button data-subject="Chemistry" class="text-btn subjectBtn">Explore Chemistry →</button></article><article class="subject maths"><div class="subject-icon">∑</div><small>SUBJECT 03</small><h3>Mathematics</h3><p>Algebra, calculus, coordinate geometry.</p><button data-subject="Mathematics" class="text-btn subjectBtn">Explore Mathematics →</button></article></div>
+ <div class="filter-row"><select id="subjectFilter"><option value="All">All subjects</option><option>Physics</option><option>Chemistry</option><option>Mathematics</option></select><select id="patternFilter"><option value="All">All patterns</option><option>JEE Main</option><option>JEE Advanced</option><option>Chapter Quiz</option></select><div class="searchbox">⌕ <input id="searchTests" placeholder="Search tests or chapters"></div></div><div id="testGrid" class="test-grid"></div>
+</section>
+<section id="resources" class="section resources"><div class="section-head"><div><div class="eyebrow">REVISE FASTER</div><h2>Notes & visual learning</h2><p>Chapter summaries, formula sheets and mind maps.</p></div></div><div id="resourceGrid" class="resource-grid"></div></section>
+<section class="section premium" id="pricing"><div><div class="eyebrow">UNLOCK YOUR FULL POTENTIAL</div><h2>One small step.<br><em>A stronger preparation.</em></h2><p>Get access to premium practice sets and additional learning resources with a one-time ₹29 membership offer.</p><ul><li>Premium mock test collection</li><li>Additional chapter-wise practice</li><li>Premium notes and revision resources</li><li>Performance history</li></ul></div><div class="price-card"><div class="popular">STUDENT ACCESS</div><small>ONE-TIME MEMBERSHIP</small><div class="price">₹29</div><p>Pay using UPI and submit your transaction screenshot for review.</p><div class="upi-box"><span>UPI ID</span><b id="upiDisplay">Add your UPI ID in admin settings</b></div><button class="btn primary full" id="premiumBtn">Request premium access</button><small class="muted">Membership activates after admin verifies the payment. Never upload passwords, OTPs or banking PINs.</small></div></section>
+<section class="section faq"><h2>Frequently asked questions</h2><details><summary>Is there a free demo?</summary><p>Yes. You can try the demo quiz and explore the platform before choosing premium access.</p></details><details><summary>How does premium activation work?</summary><p>Pay ₹29 to the UPI ID shown by the site owner, upload the transaction screenshot and wait for manual verification. AI can help read transaction details, but should not approve payments by itself.</p></details><details><summary>Can I use it on my phone?</summary><p>Yes. The layout adapts to mobile, tablet and desktop screens.</p></details></section>
+</main>
+<footer><div class="brand"><span class="brand-mark">S</span><span>QUANTA <b>JEE ACADEMY</b><small>PREPARE SMART · PRACTICE MORE</small></span></div><p>Independent learning platform. Not affiliated with NTA, IITs or any examination authority.</p><span>© <span id="year"></span> QUANTA JEE</span></footer>
+<div id="modal" class="modal hidden"><div class="modal-card"><button class="close" id="closeModal">×</button><div id="modalContent"></div></div></div>
+<script src="app.js"></script>
+</body></html>
